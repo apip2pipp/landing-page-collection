@@ -6,8 +6,6 @@
 
 A curated collection of modern, responsive landing pages built with HTML, CSS, Bootstrap, and Tailwind CSS.
 
-![Project Preview](https://via.placeholder.com/800x400?text=Landing+Page+Collection+Preview) <!-- Replace with actual screenshot -->
-
 ## 🚀 Features
 
 - **Multiple Templates**: Business, portfolio, product, and more

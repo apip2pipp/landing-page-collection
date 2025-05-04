@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akreditasi Program Studi - Universitas Contoh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: 100%;
+            width: 2px;
+            background: #e5e7eb;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50x50" alt="Logo Universitas" class="h-10 mr-3">
+                <h1 class="text-xl font-bold text-blue-900">Universitas Contoh</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-blue-900 font-medium hover:text-blue-700">Beranda</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-700">Tentang Akreditasi</a>
+                <a href="#process" class="text-gray-600 hover:text-blue-700">Proses</a>
+                <a href="#programs" class="text-gray-600 hover:text-blue-700">Program Studi</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700">Kontak</a>
+            </nav>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Akreditasi Program Studi Unggulan</h1>
+                <p class="text-xl mb-8 opacity-90">Meningkatkan kualitas pendidikan melalui sistem penjaminan mutu yang terstandar secara nasional dan internasional.</p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="#programs" class="bg-white text-blue-900 font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 text-center">
+                        Lihat Program Studi
+                    </a>
+                    <a href="#process" class="border-2 border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition duration-300 text-center">
+                        Proses Akreditasi
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/500x350" alt="Ilustrasi Akreditasi" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Accreditation Badges -->
+    <section class="bg-gray-50 py-12 -mt-8">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-xl shadow-md p-6 flex flex-wrap justify-center items-center gap-8">
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/80x80" alt="BAN-PT" class="h-16 mb-2">
+                    <span class="text-sm font-medium text-gray-600">BAN-PT</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/80x80" alt="AUN-QA" class="h-16 mb-2">
+                    <span class="text-sm font-medium text-gray-600">AUN-QA</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/80x80" alt="ABET" class="h-16 mb-2">
+                    <span class="text-sm font-medium text-gray-600">ABET</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/80x80" alt="FIBAA" class="h-16 mb-2">
+                    <span class="text-sm font-medium text-gray-600">FIBAA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Accreditation -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Tentang Akreditasi Program Studi</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Akreditasi merupakan pengakuan formal terhadap kelayakan suatu program studi dalam menyelenggarakan pendidikan tinggi berdasarkan standar mutu yang ditetapkan.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 card-hover">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-medal text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-900">Standar Mutu</h3>
+                    <p class="text-gray-600">
+                        Program studi yang terakreditasi telah memenuhi standar mutu pendidikan tinggi yang ditetapkan oleh lembaga akreditasi nasional dan internasional.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 card-hover">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-globe-asia text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-900">Pengakuan Global</h3>
+                    <p class="text-gray-600">
+                        Akreditasi internasional memberikan pengakuan global terhadap kualitas lulusan, memudahkan mobilitas akademik dan profesional di tingkat dunia.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 card-hover">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-900">Peningkatan Berkelanjutan</h3>
+                    <p class="text-gray-600">
+                        Proses akreditasi mendorong program studi untuk terus melakukan evaluasi dan peningkatan mutu secara berkelanjutan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accreditation Process -->
+    <section id="process" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Proses Akreditasi</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Proses akreditasi program studi dilakukan melalui beberapa tahapan untuk memastikan pemenuhan standar mutu pendidikan.
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item relative pl-10 pb-10">
+                        <div class="absolute left-0 top-0 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full text-white font-bold">1</div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">Persiapan Dokumen</h3>
+                        <p class="text-gray-600">
+                            Program studi mempersiapkan seluruh dokumen yang diperlukan termasuk kurikulum, profil dosen, fasilitas, dan capaian pembelajaran.
+                        </p>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item relative pl-10 pb-10">
+                        <div class="absolute left-0 top-0 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full text-white font-bold">2</div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">Pengajuan Akreditasi</h3>
+                        <p class="text-gray-600">
+                            Pengajuan akreditasi dilakukan melalui sistem online dengan melengkapi semua persyaratan yang diminta oleh lembaga akreditasi.
+                        </p>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item relative pl-10 pb-10">
+                        <div class="absolute left-0 top-0 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full text-white font-bold">3</div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">Asesmen Lapangan</h3>
+                        <p class="text-gray-600">
+                            Tim asesor melakukan kunjungan lapangan untuk memverifikasi dokumen dan mengevaluasi kesiapan program studi.
+                        </p>
+                    </div>
+                    
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item relative pl-10 pb-10">
+                        <div class="absolute left-0 top-0 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full text-white font-bold">4</div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">Penilaian dan Keputusan</h3>
+                        <p class="text-gray-600">
+                            Berdasarkan hasil evaluasi, lembaga akreditasi akan menetapkan peringkat akreditasi dan masa berlaku sertifikat.
+                        </p>
+                    </div>
+                    
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item relative pl-10">
+                        <div class="absolute left-0 top-0 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full text-white font-bold">5</div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">Pemantauan Berkala</h3>
+                        <p class="text-gray-600">
+                            Program studi wajib melaporkan perkembangan secara berkala dan mempersiapkan diri untuk akreditasi ulang sebelum masa berlaku habis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accredited Programs -->
+    <section id="programs" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Program Studi Terakreditasi</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Berikut adalah daftar program studi di Universitas Contoh yang telah mendapatkan akreditasi.
+                </p>
+            </div>
+            
+            <div class="mb-8 flex justify-center">
+                <div class="inline-flex rounded-md shadow-sm">
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-l-lg bg-blue-600 text-white focus:z-10 focus:ring-2 focus:ring-blue-500">
+                        Semua
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:ring-2 focus:ring-blue-500">
+                        Unggul
+
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:ring-2 focus:ring-blue-500">
+                        Baik Sekali
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-r-lg bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:ring-2 focus:ring-blue-500">
+                      
+                        Baik
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Program 1 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 card-hover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Teknik Informatika</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Unggul</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Fakultas Teknologi Informasi</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">BAN-PT</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">ABET</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Berlaku hingga: 2027</span>
+                            <a href="#" class="text-blue-600 hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 2 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 card-hover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Manajemen</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Baik Sekali</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Fakultas Ekonomi dan Bisnis</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">BAN-PT</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">AACSB</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Berlaku hingga: 2026</span>
+                            <a href="#" class="text-blue-600 hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 3 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 card-hover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Kedokteran</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Unggul</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Fakultas Kedokteran</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">BAN-PT</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">WFME</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Berlaku hingga: 2028</span>
+                            <a href="#" class="text-blue-600 hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 4 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 card-hover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Hukum</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Baik Sekali</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Fakultas Hukum</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">BAN-PT</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Berlaku hingga: 2025</span>
+                            <a href="#" class="text-blue-600 hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 5 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 card-hover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Teknik Sipil</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Unggul</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Fakultas Teknik</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">BAN-PT</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">ABET</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Berlaku hingga: 2027</span>
+                            <a href="#" class="text-blue-600 hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 6 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 card-hover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Psikologi</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Baik</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Fakultas Psikologi</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">BAN-PT</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Berlaku hingga: 2024</span>
+                            <a href="#" class="text-blue-600 hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                    Lihat Semua Program Studi
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Pertanyaan Umum</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Temukan jawaban untuk pertanyaan yang sering diajukan tentang akreditasi program studi.
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition duration-300 flex justify-between items-center">
+                        <span class="font-medium text-lg text-blue-900">Apa itu akreditasi program studi?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div class="px-6 py-4 text-gray-600">
+                            Akreditasi program studi adalah proses penilaian terhadap kel
+</html>
